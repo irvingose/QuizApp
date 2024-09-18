@@ -42,20 +42,20 @@ body.wrong {
 
 .btn-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Change from 'auto' to '1fr' */
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   margin: 20px 0;
 }
 
 .btn {
-  --hue: var(--hue-neutral); /* Default button hue */
+  --hue: var(--hue-neutral);
   border: 1px solid hsl(var(--hue), 100%, 30%);
   background-color: hsl(var(--hue), 100%, 50%);
   border-radius: 5px;
   padding: 5px 10px;
   color: white;
   outline: none;
-  transition: background-color 0.3s, border-color 0.3s; /* Added transition for smoother effect */
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .btn:hover {
@@ -63,12 +63,8 @@ body.wrong {
 }
 
 .btn.correct {
-  --hue: var(--hue-correct); /* Changes the hue */
-  background-color: hsl(
-    var(--hue),
-    100%,
-    50%
-  ); /* You need to apply the background again */
+  --hue: var(--hue-correct);
+  background-color: hsl(var(--hue), 100%, 50%);
   border-color: hsl(var(--hue), 100%, 30%);
   color: black;
 }
